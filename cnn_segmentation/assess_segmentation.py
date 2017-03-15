@@ -26,7 +26,7 @@ def compute_performance(pred_label_files, true_label_files, n_classes, out_file,
         label_list_file: The name of all classes, only used when verbose=True
 
     Calculate:
-        - accurate rate (including class 0)
+        - accuracy (including class 0)
         - mean of dice scores of non-background classes
         - std of dice scores of non-background classes
 

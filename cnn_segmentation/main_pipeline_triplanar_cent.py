@@ -38,7 +38,7 @@ logger_path = './experiments/keras/triplanar_cent/train_triplanar_cent_log.csv'
 n_classes = 135
 patch_size = 29
 scales = [1, 3]
-n_voxels_tr = 40000
+n_voxels_tr = 60000
 n_voxels_va = 10000
 train_batch_size = 200
 max_epoch = 300
@@ -57,7 +57,7 @@ prediction_worker = './prediction_worker_triplanar_cent.py'
 generator_batch_size = 200000
 gpu_batch_size = 50000
 out_segmentation_dir = './experiments/keras/triplanar_cent/'
-gpus = ['cuda0', 'cuda1', 'cuda2']
+gpus = ['gpu0', 'gpu1', 'gpu2']
 
 # assessment configs
 performance_file = './experiments/keras/triplanar_cent/performance_triplanar_cent.csv'

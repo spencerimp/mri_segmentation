@@ -58,7 +58,7 @@ prediction_worker = './prediction_worker_triplanar.py'
 generator_batch_size = 100000
 gpu_batch_size = 50000
 out_segmentation_dir = './experiments/keras/triplanar/'
-gpus = ['cuda0', 'cuda1', 'cuda2']
+gpus = ['gpu0', 'gpu1', 'gpu2']
 
 # assessment configs
 performance_file = './experiments/keras/triplanar/performance_triplanar.csv'

@@ -1,8 +1,11 @@
- ## Application
- 
-This repository implements whole brain segmentation, which segments brain MRI scan into 134 anatomical regions. The methodogy and result have been published in a book chapter: 
+## Intro
+
+This repository implements whole brain segmentation, which segments brain MRI scan into 134 anatomical regions. The methodogy and result have been published in a book chapter:
 
 [Chapter 10: Characterization of Errors in Deep Learning-Based Brain MRI Segmentation." Deep Learning for Medical Image Analysis](https://www.elsevier.com/books/deep-learning-for-medical-image-analysis/zhou/978-0-12-810408-8).
+
+
+You can request the dataset [here](http://masiweb.vuse.vanderbilt.edu/workshop2012/index.php/Main_Page)
 
 ## Data preprocessing
 The raw dataset should be placed in the following structure
@@ -38,25 +41,28 @@ The experiment has been modularized into several modules.
 - train_triplanar.py: specify how to sample training voxels and patch features
 - network.py: constuct the models using Keras
 - cnn_utils: common utilities used when segmenting unseen images
-- segmentation_triplanar.py: a wrapper that spawns multiple instances to run prediction workers
+- segmentation_triplanar.py: a wrapper that spawns multiple instances to run prediction workers with Theano backend
 - prediction_worker_triplanar.py: the worker function that applies trained network to segment unseen images
 - access_segmentation:py compare and evaluate the segmentation result with the ground truth
 
-You may run them separately or use a scipt to combine them and avoid copy-paste errors.
+You may run them separately or use a script to combine them and avoid copy-paste errors.
 
 ## Reproduce the experiments
 Please refer to ```main_pipeline_triplanar.py``` to see how to segment images.
 
-    $ THEANO_FLAGS="device=0 " python main_pipeline_triplanar.py
+    $ THEANO_FLAGS="device=gpu0 " python main_pipeline_triplanar.py
 
 With the example pipeline, you will use device 0 to train a model,
 and segment the images using 3 gpus in parallel.
 
-You should achieve dice score ~0.72 using the example setting in 135 class task.
-After that, you can run second run segmentation using the results gained from above
+You should achieve dice score ~0.72 using the example setting.
+After that, you can launch second round segmentation using the results gained from above
 
-     $ THEANO_FLAGS="device=0 " python main_pipiline_triplanar_cent.py
+     $ THEANO_FLAGS="device=gpu0 " python main_pipeline_triplanar_cent.py
 
-You should achieve performance ~0.735 ysing the example setting in class task.
+You should achieve mean dice score ~0.735 using the example setting.
 
-Note that the performance is the mean dice of 134 non-background regions.
+Note
+
+- The performance is the mean dice of 134 non-background regions.
+- At the time of writing, using TensorFlow backend (v1.0) for training yields bad model, use it with caution for this application.

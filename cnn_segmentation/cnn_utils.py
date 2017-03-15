@@ -23,7 +23,6 @@ from utils.utils import (
 from utils.voxel_feature import (
     PickPatchFeature,
     PickDistCentroids,
-    PickRegProb,
 )
 from utils.voxel_sampling import (
     PickVoxelBalancedNonBackground,
@@ -163,36 +162,6 @@ def segment_by_generator(net, img_path, mask_path,
                                           [patch_picker, cent_picker],
                                           [patch2d_mu, cent_mu],
                                           [patch2d_sigma, cent_sigma])
-
-    elif network_type == 'CnnTriplanarMultisetReg':
-        patch_picker = patch_picker_class(img, patch_size, scales)
-
-        candidate_results = get_candidate_results(kwargs['reg_path'])
-        # pad registration results as patch picker does to match voxels
-        for i, candidate_result in enumerate(candidate_results):
-            padded_result = pad_images(pad_width, candidate_result)[0]
-            candidate_results[i] = padded_result
-
-        reg_picker = PickRegProb(net.out_size, candidate_results)
-
-        patch2d_mu = net.patch2d_mu
-        patch2d_sigma = net.patch2d_sigma
-        reg_mu = net.dense_mu
-        reg_sigma = net.dense_sigma
-
-        feat_gen = extract_feat_generator(net, voxels, batch_size,
-                                          [patch_picker, reg_picker],
-                                          [patch2d_mu, reg_mu],
-                                          [patch2d_sigma, reg_sigma])
-    elif network_type == 'Cnn3DPatch':
-        patch_picker = patch_picker_class(img, patch_size, scales)
-        patch3d_mu = net.patch3d_mu
-        patch3d_sigma = net.patch3d_sigma
-
-        feat_gen = extract_feat_generator(net, voxels, batch_size,
-                                          [patch_picker],
-                                          [patch3d_mu],
-                                          [patch3d_sigma])
 
     y_prob = net.predict_generator(feat_gen, gpu_batch_size)
     y_pred = np.argmax(y_prob, axis=1)

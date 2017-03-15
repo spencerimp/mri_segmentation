@@ -1,17 +1,16 @@
-Neuroimage quantification
-
 Deep learning based MRI segmentation toolkit with patch-based method.
+
 Please refer to different branches for different applications/examples.
 
 - master: whole brain segmentation
-- harp: hippocampus segmentation
 
 The main programming language used is Python 3.5.
 
 
 ### Convolutional Neural Networks
 This package implements Convolutional Neural Networks (CNN) on top of Keras.
-The examples and document are focus on Theano backend.
+Keras supports Theano and TensorFlow, and I decided to use Theano for data parallelism.
+
 You can switch to TensorFlow backend.
 
 ### Setting environment
@@ -86,11 +85,9 @@ Set default Keras backend as Theano and configure Theano
 
 ### Environment and alias
 
-I provide my favoriate alias setting, some of are optional.
+I provide my favorite alias and environment variable setting, some of are optional.
 
-Add the configuration in ```.bashrc``` to your shell.
+Consider adding the configuration in ```.bashrc``` to your shell.
 
 
 See directory ```cnn_segmentation``` for more details.
-
-
