@@ -1,0 +1,13 @@
+[global]
+floatX = float32
+optimizer = fast_run
+
+[cuda]
+root = /usr/local/cuda-8.0/
+
+[nvcc]
+optimizer_including=cudnn
+flags=-D_FORCE_INLINES
+
+[blas]
+ldflags = -L/home/[your account]/anaconda3/lib -lopenblas

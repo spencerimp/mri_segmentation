@@ -1,0 +1,134 @@
+1,3rd Ventricle
+2,4th Ventricle
+3,Right Accumbens Area
+4,Left Accumbens Area
+5,Right Amygdala
+6,Left Amygdala
+7,Brain Stem
+8,Right Caudate
+9,Left Caudate
+10,Right Cerebellum Exterior
+11,Left Cerebellum Exterior
+12,Right Cerebellum White Matter
+13,Left Cerebellum White Matter
+14,Right Cerebral White Matter
+15,Left Cerebral White Matter
+16,CSF
+17,Right Hippocampus
+18,Left Hippocampus
+19,Right Inf Lat Vent
+20,Left Inf Lat Vent
+21,Right Lateral Ventricle
+22,Left Lateral Ventricle
+23,Right Pallidum
+24,Left Pallidum
+25,Right Putamen
+26,Left Putamen
+27,Right Thalamus Proper
+28,Left Thalamus Proper
+29,Right Ventral DC
+30,Left Ventral DC
+31,Optic Chiasm
+32,Cerebellar Vermal Lobules I-V
+33,Cerebellar Vermal Lobules VI-VII
+34,Cerebellar Vermal Lobules VIII-X
+35,Left Basal Forebrain
+36,Right Basal Forebrain
+37,Right ACgG  anterior cingulate gyrus
+38,Left ACgG  anterior cingulate gyrus
+39,Right AIns  anterior insula
+40,Left AIns  anterior insula
+41,Right AOrG  anterior orbital gyrus
+42,Left AOrG  anterior orbital gyrus
+43,Right AnG   angular gyrus
+44,Left AnG   angular gyrus
+45,Right Calc  calcarine cortex
+46,Left Calc  calcarine cortex
+47,Right CO    central operculum
+48,Left CO    central operculum
+49,Right Cun   cuneus
+50,Left Cun   cuneus
+51,Right Ent   entorhinal area
+52,Left Ent   entorhinal area
+53,Right FO    frontal operculum
+54,Left FO    frontal operculum
+55,Right FRP   frontal pole
+56,Left FRP   frontal pole
+57,Right FuG   fusiform gyrus
+58,Left FuG   fusiform gyrus
+59,Right GRe   gyrus rectus
+60,Left GRe   gyrus rectus
+61,Right IOG   inferior occipital gyrus
+62,Left IOG   inferior occipital gyrus
+63,Right ITG   inferior temporal gyrus
+64,Left ITG   inferior temporal gyrus
+65,Right LiG   lingual gyrus
+66,Left LiG   lingual gyrus
+67,Right LOrG  lateral orbital gyrus
+68,Left LOrG  lateral orbital gyrus
+69,Right MCgG  middle cingulate gyrus
+70,Left MCgG  middle cingulate gyrus
+71,Right MFC   medial frontal cortex
+72,Left MFC   medial frontal cortex
+73,Right MFG   middle frontal gyrus
+74,Left MFG   middle frontal gyrus
+75,Right MOG   middle occipital gyrus
+76,Left MOG   middle occipital gyrus
+77,Right MOrG  medial orbital gyrus
+78,Left MOrG  medial orbital gyrus
+79,Right MPoG  postcentral gyrus medial segment
+80,Left MPoG  postcentral gyrus medial segment
+81,Right MPrG  precentral gyrus medial segment
+82,Left MPrG  precentral gyrus medial segment
+83,Right MSFG  superior frontal gyrus medial segment
+84,Left MSFG  superior frontal gyrus medial segment
+85,Right MTG   middle temporal gyrus
+86,Left MTG   middle temporal gyrus
+87,Right OCP   occipital pole
+88,Left OCP   occipital pole
+89,Right OFuG  occipital fusiform gyrus
+90,Left OFuG  occipital fusiform gyrus
+91,Right OpIFG opercular part of the inferior frontal gyrus
+92,Left OpIFG opercular part of the inferior frontal gyrus
+93,Right OrIFG orbital part of the inferior frontal gyrus
+94,Left OrIFG orbital part of the inferior frontal gyrus
+95,Right PCgG  posterior cingulate gyrus
+96,Left PCgG  posterior cingulate gyrus
+97,Right PCu   precuneus
+98,Left PCu   precuneus
+99,Right PHG   parahippocampal gyrus
+100,Left PHG   parahippocampal gyrus
+101,Right PIns  posterior insula
+102,Left PIns  posterior insula
+103,Right PO    parietal operculum
+104,Left PO    parietal operculum
+105,Right PoG   postcentral gyrus
+106,Left PoG   postcentral gyrus
+107,Right POrG  posterior orbital gyrus
+108,Left POrG  posterior orbital gyrus
+109,Right PP    planum polare
+110,Left PP    planum polare
+111,Right PrG   precentral gyrus
+112,Left PrG   precentral gyrus
+113,Right PT    planum temporale
+114,Left PT    planum temporale
+115,Right SCA   subcallosal area
+116,Left SCA   subcallosal area
+117,Right SFG   superior frontal gyrus
+118,Left SFG   superior frontal gyrus
+119,Right SMC   supplementary motor cortex
+120,Left SMC   supplementary motor cortex
+121,Right SMG   supramarginal gyrus
+122,Left SMG   supramarginal gyrus
+123,Right SOG   superior occipital gyrus
+124,Left SOG   superior occipital gyrus
+125,Right SPL   superior parietal lobule
+126,Left SPL   superior parietal lobule
+127,Right STG   superior temporal gyrus
+128,Left STG   superior temporal gyrus
+129,Right TMP   temporal pole
+130,Left TMP   temporal pole
+131,Right TrIFG triangular part of the inferior frontal gyrus
+132,Left TrIFG triangular part of the inferior frontal gyrus
+133,Right TTG   transverse temporal gyrus
+134,Left TTG   transverse temporal gyrus
