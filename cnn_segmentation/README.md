@@ -4,8 +4,10 @@ This repository implements whole brain segmentation, which segments brain MRI sc
 
 [Chapter 10: Characterization of Errors in Deep Learning-Based Brain MRI Segmentation." Deep Learning for Medical Image Analysis](https://www.elsevier.com/books/deep-learning-for-medical-image-analysis/zhou/978-0-12-810408-8).
 
+The dataset is from MICCAI 2012 Grand Challenge on Multi-Atlas Labeling, not publicly available now.
 
-You can request the dataset [here](http://masiweb.vuse.vanderbilt.edu/workshop2012/index.php/Main_Page)
+You may need to contact the organizer on their [homepage](https://my.vanderbilt.edu/masi/).
+
 
 ## Data preprocessing
 The raw dataset should be placed in the following structure
@@ -64,5 +66,5 @@ You should achieve mean dice score ~0.735 using the example setting.
 
 Note
 
-- The performance is the mean dice of 134 non-background regions.
+- The performance is the mean dice of 134 non-background regions. You can check `docs` for the label list. Note that the raw annotation contains more than 134 classes.
 - At the time of writing, using TensorFlow backend (v1.0) for training yields bad model, use it with caution for this application.
